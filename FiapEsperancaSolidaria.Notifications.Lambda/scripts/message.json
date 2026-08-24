@@ -1,0 +1,6 @@
+{
+  "CorrelationId": "12345678-1234-1234-1234-123456789012",
+  "To": "teste@email.com",
+  "Subject": "Bem-vindo",
+  "Body": "Sua conta foi criada"
+}

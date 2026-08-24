@@ -1,0 +1,10 @@
+{
+  "errorType": "NullReferenceException",
+  "errorMessage": "Object reference not set to an instance of an object.",
+  "stackTrace": [
+    "at FiapEsperancaSolidaria.Notifications.Lambda.EmailFunction.FunctionHandler(SQSEvent evnt, ILambdaContext context) in C:\\Users\\robso\\repos\\fiap-cloudgames-notifications-lambda\\fiapcloudgames.notifications.lambda\\Function\\EmailFunction.cs:line 37",
+    "at lambda_method1(Closure, Stream, ILambdaContext, Stream)",
+    "at Amazon.Lambda.RuntimeSupport.HandlerWrapper.<>c__DisplayClass8_0.<GetHandlerWrapper>b__0(InvocationRequest invocation) in /src/Repo/Libraries/src/Amazon.Lambda.RuntimeSupport/Bootstrap/HandlerWrapper.cs:line 68",
+    "at Amazon.Lambda.RuntimeSupport.LambdaBootstrap.<>c__DisplayClass26_0.<<InvokeOnceAsync>b__0>d.MoveNext() in /src/Repo/Libraries/src/Amazon.Lambda.RuntimeSupport/Bootstrap/LambdaBootstrap.cs:line 369"
+  ]
+}

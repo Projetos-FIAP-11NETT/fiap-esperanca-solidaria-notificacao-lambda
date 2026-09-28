@@ -21,7 +21,6 @@ New Relic.
 - [Testando](#testando)
 - [Observabilidade](#observabilidade)
 - [Troubleshooting](#troubleshooting)
-- [Pendências](#pendências)
 
 ---
 
@@ -214,14 +213,3 @@ Para depurar localmente, use o perfil **Mock Lambda Test Tool** do `launchSettin
 | `[NewRelic] Log status: Forbidden/Unauthorized` | `NEW_RELIC_LICENSE_KEY` ausente ou inválida — não afeta o envio do e-mail. |
 | Nenhum e-mail chega | Esperado no LocalStack (SES é simulado); veja `/_aws/ses`. Na AWS real o remetente precisa estar verificado no SES. |
 | `function.zip` não encontrado no Terraform | Gere o pacote e copie para `infra/terraform/lambda-notification/`. |
-
----
-
-## Pendências
-
-- O `usuario-api` tem o publisher pronto, mas a chamada no cadastro está comentada; hoje nada publica na
-  `notification-queue` no fluxo normal.
-- Falhas no envio são capturadas e apenas logadas — a mensagem é confirmada mesmo assim (sem retry/DLQ) e
-  o log "Email enviado" é emitido também nos casos de erro.
-- O remetente (`no-reply@fiapcloudgames.local`) é herdado do projeto anterior e está fixo no código.
-- Os `appsettings*.json` não são lidos pelo código; podem ser removidos ou passar a ser usados.
